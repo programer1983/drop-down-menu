@@ -46,7 +46,29 @@ header nav ul li a {
     display: block;
 }
 
-a:hover {
+header nav ul li a:hover {
     background: #000;
     color: #fff;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
 }
